@@ -12,6 +12,7 @@ jobs:
         with:
           node-version: "11.x"
       - run: npm ci
+
       - run: npm run format
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
